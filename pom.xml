@@ -6,7 +6,11 @@
     <groupId>com.github.feh-wilinando</groupId>
     <artifactId>spring-microservice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <modules>
+        <module>topics</module>
+        <module>topic-categories</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <name>spring-microservice</name>
     <description>Demo project with Spring Cloud stack</description>
