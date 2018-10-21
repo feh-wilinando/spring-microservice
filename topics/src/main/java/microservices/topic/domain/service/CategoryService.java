@@ -11,7 +11,7 @@ import java.util.Optional;
 @Service
 public class CategoryService {
     private final RestTemplate client;
-    private String categoriesURL = "http://localhost:8090/";
+    private String categoriesURL = "http://categories/";
 
     public CategoryService(RestTemplate client) {
         this.client = client;
