@@ -36,11 +36,11 @@ public class UserController {
     @PostMapping(consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<User> newUser(@RequestBody  UserForm form){
         return service.createUserBy(form)
-                    .map(this::toResponseCreated)
+                    .map(this::toCreatedResponse)
                         .orElseGet(ResponseEntity.status(HttpStatus.PRECONDITION_FAILED)::build);
     }
 
-    private ResponseEntity<User> toResponseCreated(User user) {
+    private ResponseEntity<User> toCreatedResponse(User user) {
         URI uri = URI.create("/" + user.getId());
 
         return ResponseEntity
