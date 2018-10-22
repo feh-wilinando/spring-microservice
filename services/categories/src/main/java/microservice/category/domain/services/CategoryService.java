@@ -2,7 +2,7 @@ package microservice.category.domain.services;
 
 import microservice.category.application.forms.CategoryForm;
 import microservice.category.domain.models.Category;
-import microservice.category.domain.repositories.CategoryRepository;
+import microservice.category.domain.repositories.Categories;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -10,9 +10,9 @@ import java.util.Optional;
 
 @Service
 public class CategoryService {
-    private final CategoryRepository repository;
+    private final Categories repository;
 
-    public CategoryService(CategoryRepository repository) {
+    public CategoryService(Categories repository) {
         this.repository = repository;
     }
 

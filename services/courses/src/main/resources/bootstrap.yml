@@ -1,0 +1,4 @@
+eureka:
+  instance:
+    hostname: "${HOSTNAME:localhost}"
+    instance-id: "${spring.application.name}-${random.uuid}"

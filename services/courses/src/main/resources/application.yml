@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: category
+    name: courses
 
   datasource:
     url: "jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:forum}?createDatabaseIfNotExist=true&useSSL=false"

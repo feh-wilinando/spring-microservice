@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import microservices.users.domain.repositories.UserRepository;
+import microservices.users.domain.repositories.Users;
 
 import javax.annotation.PostConstruct;
 
@@ -18,7 +18,7 @@ public class UserApp {
 
 
     @Autowired
-    private UserRepository repository;
+    private Users repository;
 
     @PostConstruct
     public void loadData(){

@@ -2,7 +2,7 @@ package microservices.users.domain.services;
 
 import microservices.users.application.forms.UserForm;
 import microservices.users.domain.models.User;
-import microservices.users.domain.repositories.UserRepository;
+import microservices.users.domain.repositories.Users;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -10,9 +10,9 @@ import java.util.Optional;
 
 @Service
 public class UserService {
-    private final UserRepository repository;
+    private final Users repository;
 
-    public UserService(UserRepository repository) {
+    public UserService(Users repository) {
         this.repository = repository;
     }
 

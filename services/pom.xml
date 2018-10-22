@@ -17,6 +17,7 @@
         <module>topics</module>
         <module>users</module>
         <module>answers</module>
+        <module>courses</module>
     </modules>
 
     <dependencies>

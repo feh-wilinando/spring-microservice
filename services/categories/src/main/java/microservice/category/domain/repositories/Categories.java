@@ -6,7 +6,7 @@ import org.springframework.data.repository.Repository;
 import java.util.List;
 import java.util.Optional;
 
-public interface CategoryRepository extends Repository<Category, Long> {
+public interface Categories extends Repository<Category, Long> {
 
     void save(Category category);
 

@@ -1,7 +1,7 @@
 package microservice.category;
 
 import microservice.category.domain.models.Category;
-import microservice.category.domain.repositories.CategoryRepository;
+import microservice.category.domain.repositories.Categories;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,7 +18,7 @@ public class CategoryApp {
 
 
     @Autowired
-    private CategoryRepository repository;
+    private Categories repository;
 
     @PostConstruct
     public void loadData(){
