@@ -10,6 +10,8 @@
         <module>topics</module>
         <module>topic-categories</module>
         <module>service-discovery</module>
+        <module>answers</module>
+        <module>services</module>
     </modules>
     <packaging>pom</packaging>
 
