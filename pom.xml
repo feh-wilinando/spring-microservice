@@ -12,6 +12,7 @@
         <module>service-discovery</module>
         <module>answers</module>
         <module>services</module>
+        <module>hystrix-dashboard</module>
     </modules>
     <packaging>pom</packaging>
 
