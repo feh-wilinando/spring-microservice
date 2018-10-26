@@ -4,12 +4,14 @@ import microservices.users.domain.models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import microservices.users.domain.repositories.Users;
 
 import javax.annotation.PostConstruct;
 
 @EnableEurekaClient
+@EnableCircuitBreaker
 @SpringBootApplication
 public class UserApp {
     public static void main(String[] args) {
